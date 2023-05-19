@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    background: url(./img/fundo.png) no-repeat
+    center center;
+    background-size: cover;
+   
+}
+/*Coloquei um backgroud no body pra você vê a navbar*/
+
+/*começo da navbar*/
+a {
+    color: black;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+img{
+
+    height: 97px;
+    width: 97px;
+    cursor: pointer;
+    padding-left: 70%;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: black;
+}
+
+nav p {
+    color: #fff;
+    padding-left: 30%;
+}
+
+main.cards{
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    padding: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+main.cards section.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: white;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    max-height: 468px;
+    margin-left: 42px;
+}
+
+main.cards section.card a {
+    text-decoration: underline;
+    color: rgb(10, 24, 226);
+    font-size: 13px;
+}
+
+main.cards section.card input {
+    font-family: 'Lexend Deca', sans-serif;
+    position: relative;
+    top: 0px;
+    left: 0%;
+    border: none;
+    text-align: center;
+    background: black;
+    padding: 8px;
+    border-radius: 40px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: .5s;
+}
+
+main.cards section.card:first-child{
+    margin-left: 0;
+}
+
+main.cards section.card h1{
+    text-transform: uppercase;
+    font-size: 100%;
+    margin: 16px 0;
+}
+
+
+main.cards section.card button{
+    font-family: 'Lexend Deca', sans-serif;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    border-radius: 32px;
+    border: 0;
+    cursor: pointer;
+    font-size: 70%;
+    font-weight: 500;
+    width: 110px;
+    height: 36px;
+    color: #fff;
+    background: #7a64b8;
+    letter-spacing: 2px;
+    transition: .5s;
+    clip-path: polygon(100% 0%, 92% 49%, 100% 100%, 11% 100%, 0% 50%, 11% 1%);
+}
+
+main.cards section.card.contact button:hover{
+    background: black;
+    color: #fff;
+    letter-spacing: 3px;
+    clip-path: polygon(87% 0, 100% 50%, 87% 100%, 0% 100%, 9% 50%, 0% 0%);
+
+}
+
+/*regristro*/
+
+section.card-shop button{
+    font-family: 'Lexend Deca', sans-serif;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    border-radius: 32px;
+    border: 0;
+    cursor: pointer;
+    font-size: 70%;
+    font-weight: 500;
+    width: 120px;
+    height: 36px;
+    color: black;
+    background: #faf9fa;
+    letter-spacing: 2px;
+    transition: .5s;
+    clip-path: polygon(100% 0%, 92% 49%, 100% 100%, 11% 100%, 0% 50%, 11% 1%);
+}
+
+section.card-shop button:hover{
+    background: #7a64b8;
+    color: #fff;
+    letter-spacing: 3px;
+    clip-path: polygon(87% 0, 100% 50%, 87% 100%, 0% 100%, 9% 50%, 0% 0%);
+}
+
+section.card-shop{
+    display: flex;
+    width: 201px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #1C1827;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    max-height: 468px;
+    margin-left: 152px;
+}
+
+
+section.card-shop input {
+    font-family: 'Lexend Deca', sans-serif;
+    position: relative;
+    top: 0px;
+    left: 0%;
+    border: none;
+    text-align: center;
+    background: #fff;
+    padding: 8px;
+    border-radius: 40px;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: .5s;
+}
+
+section.card-shop:first-child{
+    margin-left: 0;
+}
+
+section.card-shop h1{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 100%;
+    margin: 16px 0;
+}
+
+@media screen and (max-width: 720px){
+
+    body {
+        background: url(./img/fundo.png) no-repeat center
+        center;
+        background-size: cover;
+        height: 893px;
+    }
+    main.cards{
+        flex-direction: column;
+    }
+
+    main.cards section.card{
+        margin-left: 0;
+        margin-bottom: 32px;
+    }
+
+    main.cards section.card:last-child{
+        margin-bottom: 0;
+    }
+
+    
+
+
+    section.card-shop{
+        flex-direction: column;
+    }
+
+    section.card-shop{
+        margin-left: 0;
+        margin-bottom: 32px;
+    }
+
+    section.card-shop:last-child{
+        margin-bottom: 0;
+    }
+
+
+}
